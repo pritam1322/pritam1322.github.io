@@ -24,11 +24,11 @@ const AboutPage = () => {
                   Building the Future, One Line at a Time
                 </h3>
                 <p className="text-lg text-gray-600 font-inter leading-relaxed">
-                  I'm a Software developer with 3 years of experience creating scalable web applications.
+                  I&apos;m a Software developer with 3 years of experience creating scalable web applications.
                   My passion lies in transforming complex problems into elegant, user-friendly solutions.
                 </p>
                 <p className="text-lg text-gray-600 font-inter leading-relaxed">
-                  When I'm not coding, you'll find me exploring new technologies, contributing to open source,
+                  When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open source,
                   or enjoying a good cup of coffee while planning my next project.
                 </p>
               </div>
@@ -115,7 +115,7 @@ const AboutPage = () => {
                 </div>
                 <div className="absolute inset-0 bg-black/40 rounded-xl flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <p className="text-white font-inter text-center px-4">
-                    "Great code starts with great coffee"
+                  &quot;Great code starts with great coffee&quot;
                   </p>
                 </div>
               </div>

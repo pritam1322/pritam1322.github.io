@@ -1,13 +1,11 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const headerRef = useRef<HTMLElement>(null);
-  const path = usePathname();
 
   const handleToggle = () => {
     setIsMenuOpen(prev => !prev);
@@ -15,7 +13,6 @@ export default function Header() {
   };
 
   useEffect(() => {
-    const mobileMenu = mobileMenuRef.current;
 
     const handleScroll = () => {
       if (!headerRef.current) return;
@@ -28,7 +25,6 @@ export default function Header() {
       if (e.key === 'Escape') setIsMenuOpen(false);
     };
 
-    const handleLinkClick = () => setIsMenuOpen(false);
 
     const smoothScroll = (e: Event) => {
       e.preventDefault();
