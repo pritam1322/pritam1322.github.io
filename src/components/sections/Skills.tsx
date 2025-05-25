@@ -2,6 +2,13 @@
 
 import React from "react";
 
+type Skill = {
+    name: string;
+    color: string;
+    percent: string;
+    icon: string;
+  };
+
 const skills = {
   frontend: [
     { name: "JavaScript", color: "bg-orange-500", percent: "88%", icon: "JS" },
@@ -116,7 +123,7 @@ const Skills = () => {
   );
 };
 
-const SkillCategory = ({ title, items }: { title: string; items: any[] }) => (
+const SkillCategory = ({ title, items }: { title: string; items: Skill[] }) => (
   <div className="skill-category justify-center">
     <h3 className="text-2xl font-inter font-semibold text-gray-900 mb-8 text-center">{title}</h3>
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
